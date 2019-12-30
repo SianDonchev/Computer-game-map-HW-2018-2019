@@ -50,27 +50,38 @@ http://viz-js.com/
 По-долу е показано как може да изглежда изходният файл за картата от примера, а също и как ще изглежда графът генериран от Graphviz. 
 digraph {
  village -> dock [label="iron key"];
+ 
  village -> basement;
 
  dock -> village;
  dock -> jungle;
 
  basement[label="basement\liron key"];
+ 
  basement -> village;
 
  jungle -> temple_entrance;
 
  temple_1a[color=red,style=filled,fillcolor="#ffefef"];
+ 
  temple_1b[label="temple_2\lserpent key",color=red,style=filled, fillcolor="#ffefef"];
+ 
  temple_2[label="temple_2\lskull key",color=red,style=filled, fillcolor="#ffefef"];
+ 
 
  temple_entrance -> temple_1a [label="skull key"];
+ 
  temple_1a -> temple_1b;
+ 
  temple_entrance -> temple_2 [label="serpent key"];
+ 
     
  desert[label="desert\liron key", color=red, style=filled, fillcolor="#ffefef"];
+ 
  oasis[color=red,style=filled, fillcolor="#ffefef"];
+ 
  desert -> oasis;
+ 
 }
 
 
